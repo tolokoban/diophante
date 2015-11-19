@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\author{Fabien PETITJEAN}
+\title{A1871. A contre-courant}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Soit un entier $n$. La somme des diviseurs de $n$, y compris 1 et n, est désignée par $\sigma(n)$.
+
+On recherche une suite $S$ strictement croissante de $k$ entiers $a_1 < a_2 < \cdots < a_k < 2015$ telle que la suite associée $S’$ des $\sigma$ de ces entiers est strictement décroissante : $\sigma(a_1) > \sigma(a_2) > \cdots >\sigma(a_k)$ .
+
+Quelle est la plus grande valeur possible de $k$ ? Donner les termes de deux suites $S$ et $S'$ associées à cette valeur $k$.
+
+Indication : $k \geq 32$.
+\end{abstract}
+
+\section{Solution}
+
+La plus grande valeur de $k$ est {\bf 34}. Il existe deux couples de suites $(S, S')$ de cette longueur :
+\begin{itemize}
+\item $S_1 \;\rightarrow\;$\{1260, 1320, 1344, 1368, 1386, 1392, 1416, 1456, 1480, 1482, 1494, 1496, 1504, 1508, 1510, 1516, 1526, 1534, 1539, 1593, 1594, 1599, 1611, 1645, 1671, 1675, 1685, 1757, 1793, 1807, 1819, 1829, 1849, 1861\}
+\item $S'_1 \;\rightarrow\;$\{4368, 4320, 4064, 3900, 3744, 3720, 3600, 3472, 3420, 3360, 3276, 3240, 3024, 2940, 2736, 2660, 2640, 2520, 2420, 2400, 2394, 2352, 2340, 2304, 2232, 2108, 2028, 2016, 1968, 1960, 1944, 1920, 1893, 1862\}
+\end{itemize}
+
+\begin{itemize}
+\item $S_2 \;\rightarrow\;$\{1080, 1140, 1152, 1170, 1230, 1232, 1236, 1314, 1330, 1340, 1352, 1362, 1364, 1384, 1390, 1395, 1396, 1414, 1462, 1533, 1538, 1551, 1557, 1587, 1595, 1675, 1685, 1757, 1793, 1807, 1819, 1829, 1849, 1861\}
+\item $S'_2 \;\rightarrow\;$\{3600, 3360, 3315, 3276, 3024, 2976, 2912, 2886, 2880, 2856, 2745, 2736, 2688, 2610, 2520, 2496, 2450, 2448, 2376, 2368, 2310, 2304, 2262, 2212, 2160, 2108, 2028, 2016, 1968, 1960, 1944, 1920, 1893, 1862\}
+\end{itemize}
+
+\section{Méthode}
+
+Ce problème revient à trouver la plus longue suite strictement décroissante extraite de $\left(\sigma(n)\right)_{1\leq n < 2015}$.
+Posons $U(n)$ un telle suite extraite dont le premier élément est $\sigma(n)$, et $\Psi(n)$ l'ensemble des entiers naturels $k \in [n+1,2014]$ tels que $\sigma(k) < \sigma(n)$. Dans ce cas, on a la relation suivante :
+$$\forall n < 2014, \; U(n) = n \oplus \max_{k \in \Psi(n)}U(k)$$
+
+Où $\max U(k)$ désigne la plus longue suite $U(k)$ (s'il y en a plusieurs, il suffit de choisir la première), et $n\oplus U$ désigne une suite commençant par $n$ suivi de tous les éléments de $U$. Par exemple : $7 \oplus \{13, 2, 6\} = \{7,13,2,6\}$.
+
+J'ai donc écrit un algorithme qui suit ce principe. Il calcule $U(n)$ pour $n$ allant de 2014 à 1 et affiche les plus longues suites extraites. J'effectue cette recherche à "contre-courant" pour éviter d'avoir à refaire le calcul des $U(n)$ plusieurs fois. Le programme prends moins de deux secondes pour donner sa réponse.
+
+Voici un extrait du code utilisé :
+
+\begin{verbatim}
+best_solutions = [None] * 2015
+best_score = 1
+
+def solve(n):
+    global best_score
+    global best_solutions
+
+    best = best_solutions[n]
+    if best != None:
+        return best[:]
+    best = []
+    s = sigmas[n]
+    for k in range(n + 1, 2015):
+        if sigmas[k] < s:
+            candidate = solve(k)
+            if len(candidate) > len(best):
+                best = candidate
+    best.append(n)
+    best_solutions[n] = best;
+    if len(best) >= best_score:
+        best_score = len(best)
+        disp = best[:]
+        disp.reverse()
+        print(disp)
+        print([sigmas[k] for k in disp])
+    return best[:]
+
+n = 2014
+while n > 0:
+    solve(n)
+    n -= 1
+\end{verbatim}
+
+Remarque : le tableau \emph{sigmas} représente la suite $\left(\sigma(n)\right)_{0\leq n < 2015}$. 
+
+\end{document}
