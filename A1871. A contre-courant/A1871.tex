@@ -6,6 +6,16 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{listings}
+
+\lstset{
+  language=Python,
+  showstringspaces=false,
+  formfeed=newpage,
+  tabsize=4,
+  commentstyle=itshape,
+  morekeywords={models, lambda, forms}
+}
 
 \author{Fabien PETITJEAN}
 \title{A1871. A contre-courant}
@@ -45,9 +55,10 @@ Où $\max U(k)$ désigne la plus longue suite $U(k)$ (s'il y en a plusieurs, il 
 
 J'ai donc écrit un algorithme qui suit ce principe. Il calcule $U(n)$ pour $n$ allant de 2014 à 1 et affiche les plus longues suites extraites. J'effectue cette recherche à "contre-courant" pour éviter d'avoir à refaire le calcul des $U(n)$ plusieurs fois. Le programme prends moins de deux secondes pour donner sa réponse.
 
-Voici un extrait du code utilisé :
+Voici un extrait du programme utilisé, écrit en {\bf Python} :
 
-\begin{verbatim}
+\vspace{8pt}\hrule
+\begin{lstlisting}
 best_solutions = [None] * 2015
 best_score = 1
 
@@ -79,7 +90,8 @@ n = 2014
 while n > 0:
     solve(n)
     n -= 1
-\end{verbatim}
+\end{lstlisting}
+\hrule\vspace{8pt}
 
 Remarque : le tableau \emph{sigmas} représente la suite $\left(\sigma(n)\right)_{0\leq n < 2015}$. 
 
