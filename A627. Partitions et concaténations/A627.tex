@@ -1,0 +1,130 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{listings}
+
+\lstset{
+  language=Python,
+  showstringspaces=false,
+  formfeed=newpage,
+  tabsize=4,
+  commentstyle=itshape,
+  morekeywords={models, lambda, forms}
+}
+
+\author{Fabien PETITJEAN}
+\title{A627. Partitions et concaténations}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Q1) Trouver l’entier $n$ à 3 chiffres qui est en même temps :
+\begin{itemize}
+\item la somme de deux entiers tels que $n^2$ s’obtient par concaténation de ces deux entiers,
+\item la somme de trois entiers tels que $n^3$ s’obtient par concaténation de ces trois entiers dont l’un d’eux s’écrit par convention sous la forme 0xy.
+\end{itemize}
+
+Q2) Trouver tous les entiers $n$ à 6 chiffres qui sont la somme de deux entiers à 6 chiffres tels que $n^2$ s’obtient par concaténation de ces deux entiers.
+
+Pour les plus courageux
+
+q1) Trouver tous les entiers $n$ à 4 chiffres qui sont la somme de trois entiers à 4 chiffres tels que $n^3$ s’obtient par concaténation de ces trois entiers.
+
+q2) Trouver tous les entiers $n$ à 3 chiffres qui sont la somme de quatre entiers  non nuls  tels que $n^4$ s’obtient par concaténation de ces quatre entiers.
+
+Nota : {\it les calculs de Q1 et de Q2  peuvent s’effectuer sans l’aide d’un quelconque automate}.
+\end{abstract}
+
+\section{Solution pour Q1}
+
+Notons $a$ et $b$ deux nombres entiers dont la comme vaut $n$ et la concaténation donne $n^2$. Le dernier chiffre (le plus à droite) de $b$ est aussi celui de $n^2$ et le dernier chiffre de $a+b$ est aussi celui de $n$. On en déduit donc le tableau suivant sur les derniers chiffres de $n$, $b$ et $a$ :
+
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$n$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\hline
+$b$ & 0 & 1 & 4 & 9 & 6 & 5 & 6 & 9 & 4 & 1 \\
+\hline
+$a$ & 0 & 0 & 8 & 4 & 8 & 0 & 0 & 8 & 4 & 8 \\
+\hline
+\end{tabular}
+
+$n$ étant composé de 3 chiffres, sa plus petite valeur est $100$ et donc son plus petit carré est $10000$, un nombre à 5 chiffres. De même, $999^2=998001$ est un nombre à 6 chiffres.
+On en déduit que $a$ ou $b$ doit avoir 3 chiffres et que l'autre a 3 ou 2 chiffres.
+
+On remarque que l'on tombe par hasard sur deux quasi-solutions : $n=999 = 998 + 001$ et $n=100=100 + 00$. 
+
+\subsection{Etudions $(0,0,0)$}
+
+Posons $a = 10x$ et $b = 10y$, alors $n^2=(a+b)^2=(x+y)^2\times 100$. Les deux derniers chiffres de $n^2$ sont 00 et il en est donc de même pour $b$.
+
+$b$ a donc 3 chiffres et $a$ en a 2 ou 3. On peut alors poser $a=100x + 10y$ et $b=100z$ où $x$, $y$ et $z$ sont des chiffres dont $z$ est non nul.
+
+D'où la multiplication suivante :
+
+\begin{tabular}{cccccccc}
+ & & & & & $w$ & $y$ & $0$ \\
+$\times$ & & & & & $w$ & $y$ & $0$ \\
+\hline
+ & & & & $(yw)$ & $y^2$ & 0 & $\bullet$ \\
+$+$ & & & $w^2$ & $(yw)$ & 0 & $\bullet$ & $\bullet$ \\
+\hline
+$=$ & & & $w^2$ & $(2yw)$ & $y^2$ & 0 & 0 \\
+$=$ & & $x$ & $y$ & 0 & $z$ & 0 & 0 \\
+\end{tabular}
+
+On en déduit que $y^2 < 10$ sans quoi une retenue se répercuterait sur $2yw$ qui deviendrait impair et qui ne pourrait du coup pas valoir 0, ni 10. $y$ ne peut pas être nul sinon $z$ le serait aussi. Donc \fbox{$0 < y < 4$}.
+
+Par ailleurs, la multiplication nous montre aussi que : 
+$$2yw \stackrel{10}\equiv 0 \iff yw \stackrel{10}\equiv 5$$
+
+La seule possibilité est $y=1$ et $w=5$ et cela nous mène à compléter la multiplication :
+
+\begin{tabular}{cccccccc}
+ & & & & & $5$ & $1$ & $0$ \\
+$\times$ & & & & & $5$ & $1$ & $0$ \\
+\hline
+ & & & & $5$ & $1$ & 0 & $\bullet$ \\
+$+$ & & $2$ & $5$ & $5$ & 0 & $\bullet$ & $\bullet$ \\
+\hline
+$=$ & & $2$ & $6$ & $5$ & $1$ & 0 & 0 \\
+$=$ & & $x$ & $y$ & 0 & $z$ & 0 & 0 \\
+\end{tabular}
+
+On observe alors des absurdités comme $5=0$ et $6=6=1$. Il n'y a donc pas de solution pour le triplet $(0,0,0)$.
+
+\subsection{Etudions $(1,0,1)$}
+
+Posons 
+\begin{itemize}
+\item $a=[x,y,0]=10^2 x + 10y$
+\item $b=[w,z,1]=10^2 w + 10z + 1$
+\end{itemize}
+Alors
+\begin{itemize}
+\item $n=a+b=[x+w,y+z,1]$
+\item $n^2=[x,y,0,w,z,1]$
+\end{itemize}
+
+\begin{tabular}{cccccccc}
+         & & & & & $x+w$ & $y+z$ & $1$ \\
+$\times$ & & & & & $x+w$ & $y+z$ & $1$ \\
+\hline
+ & & & & & $x+w$ & $y+z$ & $1$ \\
+$+$ & & & & $\substack{(x+w)\\\times(y+z)}$ & $(y+z)^2$ & $y+z$ & $\bullet$ \\[7mm] 
+$+$ & & & $(x+w)^2$ & $\substack{(x+w)\\\times(y+z)}$ & $x+w$ & $\bullet$ & $\bullet$ \\[7mm]
+\hline
+$=$ & & $2$ & $(x+w)^2$ & $\substack{2(x+w)\\\times(y+z)}$ & $\substack{2(x+w) \\ +(y+z)^2}$ & $2(y+z)$ & 1 \\[7mm]
+$=$ & & $x$ & $y$ & 0 & $w$ & $z$ & 1 \\
+\end{tabular}
+
+
+
+
+
+\end{document}
