@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=latex 2015.8.13)  6 JUN 2016 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.8.13)  11 JUL 2016 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./A627.tex
-(./A627.tex
+**./A1874.tex
+(./A1874.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
 (d:/softs/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -280,7 +280,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (d:/softs/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 (d:/softs/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
@@ -404,8 +404,8 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 (d:/softs/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (./A627.aux)
-\openout1 = `A627.aux'.
+) (./A1874.aux)
+\openout1 = `A1874.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -422,10 +422,11 @@ LaTeX Font Info:    ... okay on input line 23.
 LaTeX Info: Redefining \degres on input line 23.
 LaTeX Info: Redefining \dots on input line 23.
 LaTeX Info: Redefining \up on input line 23.
+
 *geometry* driver: auto-detecting
-*geometry* detected driver: dvips
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: dvips
+* driver: pdftex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -443,14 +444,14 @@ LaTeX Info: Redefining \up on input line 23.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -465,22 +466,39 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (d:/softs/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (22.51747pt too wide) in paragraph at lines 114--125
-[][] 
- []
+) [1
 
-[1
-
-
-] (./A627.aux) ) 
+{d:/softs/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./A1874.
+aux) ) 
 Here is how much of TeX's memory you used:
- 4519 strings out of 493092
- 58900 string characters out of 6135881
- 168672 words of memory out of 5000000
- 7966 multiletter control sequences out of 15000+600000
- 15284 words of font info for 47 fonts, out of 8000000 for 9000
+ 4530 strings out of 493091
+ 59012 string characters out of 6135855
+ 154694 words of memory out of 5000000
+ 7972 multiletter control sequences out of 15000+600000
+ 16908 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,12n,40p,336b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,6n,40p,446b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/softs/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.en
+c}<d:/softs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+d:/softs/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/s
+ofts/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/softs
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/softs/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/softs/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/softs/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/softs/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/softs/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/softs/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy9.pfb><d:/softs/texlive/2015/texmf-dist/fonts/
+type1/public/cm-super/sfbx0900.pfb><d:/softs/texlive/2015/texmf-dist/fonts/type
+1/public/cm-super/sfbx1440.pfb><d:/softs/texlive/2015/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm0900.pfb><d:/softs/texlive/2015/texmf-dist/fonts/type1/public
+/cm-super/sfrm1000.pfb><d:/softs/texlive/2015/texmf-dist/fonts/type1/public/cm-
+super/sfrm1200.pfb><d:/softs/texlive/2015/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1728.pfb>
+Output written on A1874.pdf (1 page, 171592 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on A627.dvi (1 page, 7752 bytes).

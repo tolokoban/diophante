@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper,onecolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{listings}
+
+\lstset{
+  language=Python,
+  showstringspaces=false,
+  formfeed=newpage,
+  tabsize=4,
+  commentstyle=itshape,
+  morekeywords={models, lambda, forms}
+}
+
+\author{Fabien PETITJEAN}
+\title{A1874. Double passage de relais}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent\begin{itemize}
+\item {\bf Question 1} : 
+Démontrer qu'il existe au moins une suite de $m$ entiers $a_1,a_2,a_3 \ldots,a_m > 0$ strictement croissante et un entier $p < m$ tels que, $m$ étant compris entre 10 et 25, les $p$ premiers termes, $a_1$ a $a_p$, forment une progression arithmétique de somme égale à 2016 et les $m-p+1$ termes, $a_p$ à $a_m$, prennent le relais avec une progression géométrique dont le dernier terme $a_m$ est égal à 2016.
+
+\item {\bf Question 2} : 
+Démontrer qu'il existe au moins une suite de $n$ entiers $b_1,b_2,b_3,\ldots,b_n > 0$ strictement croissante et un entier $q < n$ telle que, $n$ étant compris entre 10 et 25, les $q$ premiers termes, $b_1$ à $b_q$, forment une progression géométrique de somme égale à 2016 et les $n-q+1$ termes, $b_q$ à $b_n$, forment une progression arithmétique dont le dernier terme $b_n$ est égal à 2016.
+\end{itemize}
+\end{abstract}
+
+
+\section{Question 1}
+La décomposition en facteurs premiers de 2016 est la suivante : 
+$$2016=2^5.3^2.7$$
+
+Puisqu'une suite géométrique de raison $r$ est telle que $U_n = r.U_{n-1}$, alors les seules suites géométriques candidates pour notre problème (dont le terme $a_m$ vaut 2016) sont :
+\begin{itemize}
+\item Raison 2 : 63, 126, 252, 504, 1008, 2016.
+\item Raison 3 : 224, 672, 2016.
+\item Raison 6 : 56, 336, 2016.
+\end{itemize}
+\section{Question 2}
+
+
+\end{document}
