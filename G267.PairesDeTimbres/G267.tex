@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+
+\lstset{frame=single}
+\lstset{numbers=left}
+\lstset{extendedchars=\true}
+\lstset{inputencoding=utf8}
+
+\title{G267. Affranchissements en Diophantie}
+\author{Fabien PETITJEAN}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+La Poste de Diophantie vient de  lancer 8 collections de timbres sur différents thèmes : art, animaux, littérature, mathématiques,etc... Dans la collection $i$ il y a deux timbres de valeurs faciales entières $a_i$  et $b_i$  exprimées en centimes d’euro . Les valeurs faciales des 16 timbres ainsi  émis sont toutes distinctes entre elles.
+Je constate qu’avec les deux timbres de  la collection $i$, je peux effectuer n’importe quel affranchissement dont la valeur entière en centimes d’euro est supérieure à un certain entier $N_i$  mais il m’est impossible de réaliser  exactement l’affranchissement de $N_i$  centimes d’euro.
+Sachant que les $N_i$ ($i$ = 1 à 8) forment une suite croissante d’entiers impairs consécutifs $\leq 99$, déterminer les valeurs faciales  des 16 timbres selon les 8 collections.
+\end{abstract}
+
+\section{Déterminer $N$ en fonction de $a$ et $b$}
+
+Soit un entier naturel $n$ que l'on souhaite décomposer sous la forme 
+$n = p'a + q'b$ avec $(p', q') \in \mathbb{N}^2$.
+L'identité de Bézout nous indique qu'il existe toujours des entiers relatifs $p$ et $q$ tels que :
+$\text{PGCD}(a,b) = pa + qb$.
+Et donc, si $\text{PGCD}(a,b)=1$ alors on s'approche de la décomposition souhaitée :
+$n = npa + nqb$. Pour pouvoir identifier $p'$ avec $np$ et $q'$ avec $nq$, il faut que $p$ et $q$ soient positifs.
+
+Supposons que $a$ et $b$ soient premiers entre eux et que $a < b$. 
+On voit tout de suite que $n$ doit être au moins égal à $n$ pour espérer pouvoir être décomposé.
+En procédant à la division euclidienne de $n$ par $a$, on obtient
+$n = pa + r$.
+Puisque $a$ et $b$ sont premiers, l'identité de Bézout nous donne :
+$r = p'a + qb$.
+On peut alors s'arranger pour choisir $p'$ et $q$ de sorte que $q \geq 0$.
+En effet, 
+$r = p'a + qb \Leftrightarrow r = p'a - ab + qb + ab \Leftrightarrow (p' - b)a + (q + a)b$. 
+Finalement, on obtient ceci :
+$$n = (p + p')a + qb \text{ avec } p, q \in \mathbb{N} \text{ et } p'\in\mathbb{Z}$$
+
+La condition de décomposition de $n$ est \fbox{$p \geq p'$}. Cela nous donne un algorithme pour trouver $N$ en fonction de $a$ et $b$.
+
+Voici un exemple avec $a = 3$ et $b = 7$ :\\
+$n \equiv 1 \pmod a \Rightarrow n = 3(p - 2) + 7$ \\
+$n \equiv 2 \pmod a \Rightarrow n = 3(p - 4) + 2\times 7$ \\
+$n \equiv 0 \pmod a \Rightarrow n = 3p$ 
+
+Pour que la décomposition soit faisable, il faut que $p \geq 4 \Rightarrow n > 11 \Rightarrow N = 11$.
+
+
+Et voici un autre exemple avec $a = 5$ et $b = 9$ : \\
+$n \equiv 1 \pmod a \Rightarrow n = 5(p - 7) + 4\times 9$ \\
+$n \equiv 2 \pmod a \Rightarrow n = 5(p - 5) + 3\times 9$ \\
+$n \equiv 3 \pmod a \Rightarrow n = 5(p - 3) + 2\times 9$ \\
+$n \equiv 4 \pmod a \Rightarrow n = 5(p - 1) + 9$ \\
+$n \equiv 0 \pmod a \Rightarrow n = 5p$ 
+
+Ici encore, si $p \geq 7$, alors $n \geq 35$ est décomposable.
+Mais 34, 33 et 32 le sont aussi puisque en prenant $p = 6$, les égalités précédentes nous donnent toujours un coefficient positif pour $a$.
+Ainsi, $N = 31$.
+
+Ces calculs peuvent être faits à la main, mais pour éviter les erreurs et pour aller un peu plus vite, nous utilisons l'algorithme suivant (Python 3) :
+\lstinputlisting{N.py}
+
+\section{Examiner quelques valeurs}
+Pour se donner une idée, nous avons calculé quelques valeurs possibles de $N$ (les valeurs possédant plus de 2 chiffres sont représentées par "xx").
+
+\noindent\begin{tabular}{r|r|r|r|r|r|r|r|r|r|r|r|}
+&\bf 2&\bf 3&\bf 4&\bf 5&\bf 6&\bf 7&\bf 8&\bf 9&\bf 10&\bf 11&\bf 12 \\
+\cline{2-2}
+\bf 3 & 1 \\
+\cline{2-3}
+\bf 4 & -- & 5 \\
+\cline{2-4}
+\bf 5 & 3 & 7 & 11 \\
+\cline{2-5}
+\bf 6 & -- & -- & -- & 19 \\
+\cline{2-6}
+\bf 7 & 5 & 11 & 17 & 23 & 29 \\
+\cline{2-7}
+\bf 8 & -- & 13 & -- & 27 & -- & 41 \\
+\cline{2-8}
+\bf 9 & 7 & -- & 23 & 31 & -- & 47 & 55 \\
+\cline{2-9}
+\bf 10 & -- & 17 & -- & -- & -- & 53 & -- & 71 \\
+\cline{2-10}
+\bf 11 & 9 & 19 & 29 & 39 & 49 & 59 & 69 & 79 & 89 \\
+\cline{2-11}
+\bf 12 & -- & -- & -- & 43 & -- & 67 & -- & -- & -- & xx \\
+\cline{2-12}
+\bf 13 & 11 & 23 & 35 & 47 & 59 & 71 & 83 & 95 & xx & xx & xx \\
+\cline{2-12}
+\bf 14 & -- & 27 & -- & 51 & -- & -- & -- & xx & -- & xx & -- \\
+\cline{2-12}
+\bf 15 & 13 & -- & 41 & -- & -- & 83 & 97 & -- & -- & xx & -- \\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+Les premières valeurs donnent l'impression qu'il y a une limite à droite et on décide alors de tenter notre chance en ne calculant que les valeurs de $N$ pour $a \in \{3, \ldots, 10\}$
+et $b \in \{3, \ldots, 25\}$ et les valeurs de $N$ pour $a = 2$ et $b \in \{3, \ldots, 101\}$. On recense ainsi des triplets $(a_i, b_i, N_i)$.
+
+\section{Recherche des triplets répondant au problème}
+
+La recherche de huit triplets répondant au problème est alors réalisée par l'algorithme suivant :
+\lstinputlisting{F.py}
+
+ \vspace{5mm}
+ Le résultat final est : [7, 12, 65], [5, 18, 67], [8, 11, 69], [9, 10, 71], [3, 38, 73], [2, 77, 75], [4, 27, 77], [6, 17, 79].
+
+\end{document}

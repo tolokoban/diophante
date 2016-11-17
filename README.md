@@ -9,4 +9,8 @@ Mes tentatives de résolutions des problèmes de http://diophante.fr
 
 ## En attente d'approbation
 
+* E571. Un joli tour de cartes
+
 ## En cours
+
+* D499. 
