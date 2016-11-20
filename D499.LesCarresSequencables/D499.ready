@@ -39,7 +39,20 @@ Le carré $C_n$ de côté $n$ est dit séquençable si on peut le paver entière
 
 Ci-après, à titre d'exemple, le carré séquençable $C_{13}$. Il est pavable avec les 5 rectangles $[1,2],[3,8],[4,5],[6,10]$ et $[7,9]$ dont les dimensions sont 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
 
-{{square [0,0,8,3, 8,0,5,4, 0,3,6,10, 6,3,2,1, 6,4,7,9]}}
+\begin{pspicture}(-.2,-.2)(5.4,5.4)
+\psframe[fillstyle=solid,fillcolor=white,linewidth=1pt](0,0)(5.2,5.2)
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=red,hatchangle=150](0,0)(3.2,1.2000000000000002)
+\rput(1.6,0.6000000000000001){\psframebox*{8x3}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=green,hatchangle=144](3.2,0)(5.2,1.6)
+\rput(4.2,0.8){\psframebox*{5x4}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=blue,hatchangle=135](0,1.2000000000000002)(2.4000000000000004,5.2)
+\rput(1.2000000000000002,3.2){\psframebox*{6x10}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=cyan,hatchangle=120](2.4000000000000004,1.2000000000000002)(3.2,1.6)
+\rput(2.8000000000000003,1.4000000000000001){\tiny\psframebox*{2x1}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=magenta,hatchangle=90](2.4000000000000004,1.6)(5.2,5.2)
+\rput(3.8000000000000003,3.4000000000000004){\psframebox*{7x9}}
+\psframe[fillstyle=none,linewidth=1pt](0,0)(5.2,5.2)
+\end{pspicture}
 
 \end{abstract}
 
@@ -54,7 +67,18 @@ Avec trois rectangles, l'un d'eux doit forcément prendre tout un côté du carr
 
 Si on 4 rectangles, chacun va prendre un coin du carré à paver, mais alors les deux premiers laisseront un espace en forme de marche qu'il sera impossible de paver avec deux rectangles aux dimensions toutes différentes des deux autres.
 
-{{square [0,0,4,6, 4,0,5,8, 6,8,3,1, 0,2,2,7]}}
+\begin{pspicture}(-.2,-.2)(3.8000000000000003,3.8000000000000003)
+\psframe[fillstyle=solid,fillcolor=white,linewidth=1pt](0,0)(3.6,3.6)
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=red,hatchangle=144](0,0)(1.6,2.4000000000000004)
+\rput(0.8,1.2000000000000002){\psframebox*{4x6}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=green,hatchangle=135](1.6,0)(3.6,3.2)
+\rput(2.6,1.6){\psframebox*{5x8}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=blue,hatchangle=120](2.4000000000000004,3.2)(3.6,3.6)
+\rput(3,3.4000000000000004){\tiny\psframebox*{3x1}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=cyan,hatchangle=90](0,0.8)(0.8,3.6)
+\rput(0.4,2.2){\psframebox*{2x7}}
+\psframe[fillstyle=none,linewidth=1pt](0,0)(3.6,3.6)
+\end{pspicture}
 
 L'algorithme suivant nous donne toutes les combinaisons de rectangles dont la somme des surfaces est un carré parfait :
 
@@ -84,12 +108,64 @@ function find(n, f, solution) {
 \end{lstlisting}
 
 
-{{square [3,5,1,2, 0,0,3,7, 0,7,4,6, 3,0,10,5, 4,5,9,8]}}
-{{square [3,5,1,2, 0,5,3,8, 0,0,4,5, 3,7,10,6, 4,0,9,7]}}
+\begin{pspicture}(-.2,-.2)(5.4,5.4)
+\psframe[fillstyle=solid,fillcolor=white,linewidth=1pt](0,0)(5.2,5.2)
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=red,hatchangle=150](1.2000000000000002,2)(1.6,2.8000000000000003)
+\rput(1.4000000000000001,2.4000000000000004){\tiny\psframebox*{1x2}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=green,hatchangle=144](0,0)(1.2000000000000002,2.8000000000000003)
+\rput(0.6000000000000001,1.4000000000000001){\psframebox*{3x7}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=blue,hatchangle=135](0,2.8000000000000003)(1.6,5.2)
+\rput(0.8,4){\psframebox*{4x6}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=cyan,hatchangle=120](1.2000000000000002,0)(5.2,2)
+\rput(3.2,1){\psframebox*{10x5}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=magenta,hatchangle=90](1.6,2)(5.2,5.2)
+\rput(3.4000000000000004,3.6){\psframebox*{9x8}}
+\psframe[fillstyle=none,linewidth=1pt](0,0)(5.2,5.2)
+\end{pspicture}
+\begin{pspicture}(-.2,-.2)(5.4,5.4)
+\psframe[fillstyle=solid,fillcolor=white,linewidth=1pt](0,0)(5.2,5.2)
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=red,hatchangle=150](1.2000000000000002,2)(1.6,2.8000000000000003)
+\rput(1.4000000000000001,2.4000000000000004){\tiny\psframebox*{1x2}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=green,hatchangle=144](0,2)(1.2000000000000002,5.2)
+\rput(0.6000000000000001,3.6){\psframebox*{3x8}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=blue,hatchangle=135](0,0)(1.6,2)
+\rput(0.8,1){\psframebox*{4x5}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=cyan,hatchangle=120](1.2000000000000002,2.8000000000000003)(5.2,5.2)
+\rput(3.2,4){\psframebox*{10x6}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=magenta,hatchangle=90](1.6,0)(5.2,2.8000000000000003)
+\rput(3.4000000000000004,1.4000000000000001){\psframebox*{9x7}}
+\psframe[fillstyle=none,linewidth=1pt](0,0)(5.2,5.2)
+\end{pspicture}
 
 
-{{square [0,0,1,6, 1,0,10,2, 8,2,3,9, 1,2,7,4, 0,6,8,5]}}
-{{square [0,0,1,9, 0,9,8,2, 8,5,3,6, 1,5,7,4, 1,0,10,5]}}
+\begin{pspicture}(-.2,-.2)(4.6000000000000005,4.6000000000000005)
+\psframe[fillstyle=solid,fillcolor=white,linewidth=1pt](0,0)(4.4,4.4)
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=red,hatchangle=150](0,0)(0.4,2.4000000000000004)
+\rput(0.2,1.2000000000000002){\tiny\psframebox*{1x6}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=green,hatchangle=144](0.4,0)(4.4,0.8)
+\rput(2.4000000000000004,0.4){\psframebox*{10x2}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=blue,hatchangle=135](3.2,0.8)(4.4,4.4)
+\rput(3.8000000000000003,2.6){\psframebox*{3x9}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=cyan,hatchangle=120](0.4,0.8)(3.2,2.4000000000000004)
+\rput(1.8,1.6){\psframebox*{7x4}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=magenta,hatchangle=90](0,2.4000000000000004)(3.2,4.4)
+\rput(1.6,3.4000000000000004){\psframebox*{8x5}}
+\psframe[fillstyle=none,linewidth=1pt](0,0)(4.4,4.4)
+\end{pspicture}
+\begin{pspicture}(-.2,-.2)(4.6000000000000005,4.6000000000000005)
+\psframe[fillstyle=solid,fillcolor=white,linewidth=1pt](0,0)(4.4,4.4)
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=red,hatchangle=150](0,0)(0.4,3.6)
+\rput(0.2,1.8){\tiny\psframebox*{1x9}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=green,hatchangle=144](0,3.6)(3.2,4.4)
+\rput(1.6,4){\psframebox*{8x2}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=blue,hatchangle=135](3.2,2)(4.4,4.4)
+\rput(3.8000000000000003,3.2){\psframebox*{3x6}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=cyan,hatchangle=120](0.4,2)(3.2,3.6)
+\rput(1.8,2.8000000000000003){\psframebox*{7x4}}
+\psframe[linewidth=.5pt,fillstyle=vlines,hatchcolor=magenta,hatchangle=90](0.4,0)(4.4,2)
+\rput(2.4000000000000004,1){\psframebox*{10x5}}
+\psframe[fillstyle=none,linewidth=1pt](0,0)(4.4,4.4)
+\end{pspicture}
 
 
 Et voici les 35 configuration pour 5 rectangles (est encadrée la configuration correspondant au pavage dessiné en introduction) :
@@ -130,7 +206,7 @@ Et voici les 35 configuration pour 5 rectangles (est encadrée la configuration 
 \item $1 \times 10 + 2 \times 5 + 3 \times 9 + 4 \times 8 + 6 \times 7 = 11^2$
 \item $1 \times 10 + 2 \times 8 + 3 \times 7 + 4 \times 5 + 6 \times 9 = 11^2$
 \end{itemize}
-%\lstinputlisting{perms.js}
+
 
 
 \end{document}

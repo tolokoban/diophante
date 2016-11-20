@@ -1,0 +1,509 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.11.18)  20 NOV 2016 14:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**D499.ready
+(./D499.ready
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 53 language(s) loaded.
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/home/tolokoban/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/babel-french/frenchb.ldf
+Language: frenchb 2016/05/14 v3.2c French support from the babel system
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/babel/xebabel.def))
+\l@acadian = a dialect from \language\l@french 
+\l@canadien = a dialect from \language\l@french 
+\FB@nonchar=\count88
+\FBcolonskip=\skip43
+\FBthinskip=\skip44
+Package frenchb.ldf Info: No need for active punctuation characters
+(frenchb.ldf)             with this version of XeTeX!
+(frenchb.ldf)             reported on input line 277.
+\FB@punctthick=\XeTeXcharclass1
+\FB@punctthin=\XeTeXcharclass2
+\FB@punctnul=\XeTeXcharclass3
+\FB@guilo=\XeTeXcharclass4
+\FB@guilf=\XeTeXcharclass5
+\FB@guilnul=\XeTeXcharclass6
+\FBguillskip=\skip45
+\FBguill@level=\count89
+\FB@everypar=\toks16
+\FB@Mht=\dimen104
+LaTeX Info: Redefining \degres on input line 729.
+\std@mcc=\count90
+\dec@mcc=\count91
+\listindentFB=\skip46
+\labelwidthFB=\skip47
+\leftmarginFB=\skip48
+\parindentFFN=\dimen105
+\FBfnindent=\skip49
+))
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
+\Gm@bindingoffset=\dimen106
+\Gm@wd@mp=\dimen107
+\Gm@odd@mp=\dimen108
+\Gm@even@mp=\dimen109
+\Gm@layoutwidth=\dimen110
+\Gm@layoutheight=\dimen111
+\Gm@layouthoffset=\dimen112
+\Gm@layoutvoffset=\dimen113
+\Gm@dimlist=\toks18
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen114
+))
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen115
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip10
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks20
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks21
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count107
+\lst@gtempboxa=\box28
+\lst@token=\toks24
+\lst@length=\count108
+\lst@currlwidth=\dimen123
+\lst@column=\count109
+\lst@pos=\count110
+\lst@lostspace=\dimen124
+\lst@width=\dimen125
+\lst@newlines=\count111
+\lst@lineno=\count112
+\lst@maxwidth=\dimen126
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count113
+\lst@skipnumbers=\count114
+\lst@framebox=\box29
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
+JK)
+))
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2015/11/14 v0.62 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count115
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count116
+\pstFP@xia=\count117
+\pstFP@xib=\count118
+\pstFP@xfa=\count119
+\pstFP@xfb=\count120
+\pstFP@rega=\count121
+\pstFP@regb=\count122
+\pstFP@regs=\count123
+\pstFP@times=\count124
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-comm
+on.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen129
+\pgfutil@tempdimb=\dimen130
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-comm
+on-lists.tex))
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code
+.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfilte
+red.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.
+tex
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.
+tex
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.
+tex
+\pgf@x=\dimen131
+\pgf@xa=\dimen132
+\pgf@xb=\dimen133
+\pgf@xc=\dimen134
+\pgf@y=\dimen135
+\pgf@ya=\dimen136
+\pgf@yb=\dimen137
+\pgf@yc=\dimen138
+\c@pgf@counta=\count125
+\c@pgf@countb=\count126
+\c@pgf@countc=\count127
+\c@pgf@countd=\count128
+\pgfutil@tempcnta=\count129
+\pgfutil@tempcntb=\count130
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.cod
+e.tex
+\pgfmath@dimen=\dimen139
+\pgfmath@count=\count131
+\pgfmath@box=\box30
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+code.tex
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+basic.code.tex)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+trigonometric.code.tex)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+random.code.tex)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+comparison.code.tex)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+base.code.tex)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+round.code.tex)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+misc.code.tex)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+integerarithmetics.code.tex)))
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code
+.tex
+\c@pgfmathroundto@lastzeros=\count132
+))
+\pgffor@iter=\dimen140
+\pgffor@skip=\dimen141
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+)
+\psLoopIndex=\count133
+
+`PSTricks' v2.70  <2016/09/23> (tvz)
+\pst@dima=\dimen142
+\pst@dimb=\dimen143
+\pst@dimc=\dimen144
+\pst@dimd=\dimen145
+\pst@dimg=\dimen146
+\pst@dimh=\dimen147
+\pst@dimm=\dimen148
+\pst@dimn=\dimen149
+\pst@dimo=\dimen150
+\pst@dimp=\dimen151
+\pst@hbox=\box31
+\pst@ibox=\box32
+\pst@boxg=\box33
+\pst@cnta=\count134
+\pst@cntb=\count135
+\pst@cntc=\count136
+\pst@cntd=\count137
+\pst@cntg=\count138
+\pst@cnth=\count139
+\pst@cntm=\count140
+\pst@cntn=\count141
+\pst@cnto=\count142
+\pst@cntp=\count143
+\@zero=\count144
+\pst@toks=\toks36
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.co
+n
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.
+cfg))
+\psunit=\dimen152
+\psxunit=\dimen153
+\psyunit=\dimen154
+\pst@C@@rType=\count145
+\pslinewidth=\dimen155
+\psk@startLW=\dimen156
+\psk@endLW=\dimen157
+\pst@customdefs=\toks37
+\pslinearc=\dimen158
+\pst@symbolStep=\dimen159
+\pst@symbolWidth=\dimen160
+\pst@symbolLinewidth=\dimen161
+\everypsbox=\toks38
+\psframesep=\dimen162
+\pslabelsep=\dimen163
+\sh@wgridXunit=\dimen164
+\sh@wgridYunit=\dimen165
+\pst@shift=\dimen166
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.co
+n
+(/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.
+cfg
+Using PSTricks configuration for XeTeX+xdvipdfmx
+)))
+File: pstricks.tex 2016/09/23 v2.70 `PSTricks' (tvz,hv)
+ (/home/tolokoban/texlive/2016/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2016/09/23 v2.70 `PST-fp' (hv)
+)
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+
+LaTeX Warning: Unused global option(s):
+    [tikz].
+
+(./D499.aux)
+\openout1 = `D499.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Info: Redefining \dots on input line 27.
+LaTeX Info: Redefining \up on input line 27.
+
+
+Package frenchb.ldf Warning: Add \usepackage{fontspec} to the
+(frenchb.ldf)                preamble of your document, on input line 27.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count146
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 30.
+
+(/home/tolokoban/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Missing character: There is no ’ in font ecrm0900!
+
+Overfull \hbox (14.28635pt too wide) in paragraph at lines 40--41
+[]\T1/cmr/m/n/9 Ci-après, à titre d'exemple, le carré sé-quen-çable $\OML/cmm/m
+/it/9 C[]$\T1/cmr/m/n/9 . Il est pa-vable avec les 5 rec-tangles $\OT1/cmr/m/n/
+9 [1\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 2]\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 [3\OML/
+cmm/m/it/9 ; \OT1/cmr/m/n/9 8]\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 [4\OML/cmm/m/it/
+9 ; \OT1/cmr/m/n/9 5]\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 [6\OML/cmm/m/it/9 ; \OT1/
+cmr/m/n/9 10]$
+ []
+
+[1
+
+] [2] [3] (./D499.aux) ) 
+Here is how much of TeX's memory you used:
+ 11607 strings out of 494190
+ 193210 string characters out of 6158014
+ 301698 words of memory out of 5000000
+ 14811 multiletter control sequences out of 15000+600000
+ 19449 words of font info for 57 fonts, out of 8000000 for 9000
+ 989 hyphenation exceptions out of 8191
+ 36i,6n,72p,384b,1527s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on D499.pdf (3 pages).
